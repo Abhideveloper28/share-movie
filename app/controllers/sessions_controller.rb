@@ -1,13 +1,7 @@
 class SessionsController < ApplicationController
-  def new
-  end
-
-  def create
-  end
-
-  def login
-  end
-
-  def welcome
+  def destroy
+    session[:user_id] = nil
+    flash[:notice] = 'logout'
+    redirect_to root_url
   end
 end

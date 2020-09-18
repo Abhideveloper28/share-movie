@@ -1,0 +1,15 @@
+<div class="header">
+  <p>Share Movie</p>
+  <% if @user.present? %>
+    <%= form_for @user do |f|%>
+      <%= f.label :username%><br>
+      <%= f.text_field :username%><br>
+      <%= f.label :password%><br>
+      <%= f.password_field :password%><br>
+      <%= f.submit %>
+    <%end%>
+  <% elsif logged_in? %>
+    <h1><%= current_user.username %></h1>
+    <%= link_to 'Logout', logout_path, method: :delete %>
+  <% end %>
+</div>
