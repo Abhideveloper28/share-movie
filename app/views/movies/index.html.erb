@@ -1,5 +1,11 @@
 <% @movies.each do |movie| %>
-  <iframe width="240" height="120" src=<%= movie.url %>></iframe>
-  Title: <%= movie.title %><br/>
-  Description: <%= movie.description.html_safe %><br/>
+  <div class="row">
+    <div class="column left-frame">
+      <iframe width="240" height="120" src=<%= movie.url %>></iframe>
+    </div>
+    <div class="column">
+      <p><%= movie.title %></p>
+      <p><%= movie.description.html_safe %></p>
+    </div>
+  </div>
 <% end %>
