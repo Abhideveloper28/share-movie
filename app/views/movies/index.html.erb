@@ -1,0 +1,5 @@
+<% @movies.each do |movie| %>
+  <iframe width="240" height="120" src=<%= movie.url %>></iframe>
+  Title: <%= movie.title %><br/>
+  Description: <%= movie.description.html_safe %><br/>
+<% end %>
