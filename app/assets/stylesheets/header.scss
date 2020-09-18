@@ -3,4 +3,39 @@
   text-align: center;
   background: #1abc9c;
   color: white;
+  height: 42px;
+  padding-top: 30px;
+}
+
+.left-section {float: left;}
+.right-section {float: right;}
+
+a.heading-title {
+  text-decoration: none;
+  font-size: large;
+  font-weight: 800;
+  color: white !important;
+}
+
+a.button {
+  background-color: #253e75;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.logout-button {
+ background-color: #253e75;
+ color: white;
+ padding: 4px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+}
+
+.username {
+  padding-right: 25px;
+  font-weight: 600;
 }
